@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className='text-md font-medium'>
                     #Exploretheworld
                 </div>
-                <div>
+                <div className='flex items-center gap-3 text-neutral-600 mt-2'>
                    <SocialLink platform='github' link={siteConfig.socialLink.github!}></SocialLink>
                    <SocialLink platform='instagram' link={siteConfig.socialLink.instagram!}></SocialLink>
                 </div>
