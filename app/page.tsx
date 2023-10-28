@@ -1,7 +1,14 @@
-import Image from 'next/image'
+import PaddingContainer from "@/components/layout/padding-container";
+import PostCard from "@/components/post/post-card";
+import Image from "next/image";
+import { DUMMY_POSTS } from "@/DUMMY_DATA";
 
 export default function Home() {
   return (
-    <main className='h-screen'>Home</main>
-  )
+    <PaddingContainer>
+      <main className="h-auto space-y-10">
+        <PostCard post={DUMMY_POSTS[0]}/>
+      </main>
+    </PaddingContainer>
+  );
 }
