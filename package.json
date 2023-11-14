@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "i": "^0.3.7",
     "lucide-react": "^0.290.0",
+    "luxon": "^3.4.4",
     "next": "14.0.0",
+    "npm": "^10.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "reading-time": "^1.5.0"
   },
   "devDependencies": {
+    "@types/luxon": "^3.3.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
