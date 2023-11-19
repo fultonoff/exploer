@@ -17,7 +17,7 @@ const CtaCard = () => {
       />
         {/* content */}
         <div className='relative z-20'>
-            <div className='font-medium text-lg'>#exploretheworld</div>
+            <div className='font-medium text-lg'>#exploretheworld </div>
             <h3 className='text-4xl font-semibold mt-3'>Explore the world with me</h3>
             <p className='max-w-lg mt-2 text-lg'>Explore the world with me! I'm travelling around the 🌍. I've visited most of the great cities of ⛳ and currently I'm travelliong to 🌍 Join me!</p>
         {/* Form */}
