@@ -22,9 +22,9 @@ const PostContent = ({post}: PosrContentProps) => {
             <div className='w-2 h-2 rounded-full bg-neutral-200'></div>
         </div>
         {/* Title */}
-        <h2 className='font-medium text-3xl'>{post.title}</h2>
+        <h2 className='font-medium text-xl @md:text-2xl @lg:text-3xl'>{post.title}</h2>
         {/* Description */}
-        <p className='text-neutral-600 leading-snug'>{post.description}</p>
+        <p className='text-neutral-600 leading-snug text-base @lg:text-lg'>{post.description}</p>
         <div className='flex items-center pt-3 gap-2'>Read More <ArrowRight size={14}/></div>
     </div>
   )

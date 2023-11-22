@@ -21,9 +21,9 @@ const CtaCard = () => {
             <h3 className='text-4xl font-semibold mt-3'>Explore the world with me</h3>
             <p className='max-w-lg mt-2 text-lg'>Explore the world with me! I'm travelling around the 🌍. I've visited most of the great cities of ⛳ and currently I'm travelliong to 🌍 Join me!</p>
         {/* Form */}
-        <form className='mt-6 flex items-center gap-2'>
-            <input className='bg-white/80 text-base rounded-md py-3 px-3 placeholder:text-sm outline-none focus:ring-2 ring-neutral-600' placeholder='write your email'/>
-            <button className='bg-neutral-900 rounded-md py-2 px-3 text-neutral-200'>Sign Up</button>
+        <form className='mt-6 flex items-center gap-2 w-full'>
+            <input className='bg-white/80 text-base rounded-md py-3 px-3 placeholder:text-sm outline-none md:w-auto focus:ring-2 ring-neutral-600 w-full' placeholder='write your email'/>
+            <button className='bg-neutral-900 rounded-md py-2 px-3 text-neutral-200 whitespace-nowrap'>Sign Up</button>
         </form>
         </div>
     </div>

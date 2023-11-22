@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
     "i": "^0.3.7",
     "lucide-react": "^0.290.0",
     "luxon": "^3.4.4",
