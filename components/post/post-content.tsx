@@ -11,7 +11,7 @@ const PostContent = ({post}: PosrContentProps) => {
   return (
     <div className='space-y-2'>
         {/* Text */}
-        <div className='text-sm flex gap-2 items-center text-neutral-400'>
+        <div className='@md:text-sm text-xs flex gap-2 items-center text-neutral-400'>
             <div className={`font-medium ${post.category.title === 'Cities' ? 'text-emerald-500': 'text-indigo-600' }`}>{post.category.title}</div>
             <div className='w-2 h-2 rounded-full bg-neutral-200'></div>
             <div>{`${post.author.first_name} ${post.author.last_name}`}</div>
