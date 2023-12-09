@@ -12,7 +12,7 @@ const PostContent = ({post, isPostPage=false}: PosrContentProps) => {
   return (
     <div className='space-y-2'>
         {/* Text */}
-        <div className={` ${isPostPage ? 'text-sm': '@md:text-sm text-xs'}  flex gap-2 items-center text-neutral-400`}>
+        <div className={` ${isPostPage ? 'text-sm': '@md:text-sm text-xs'}  flex flex-wrap gap-2 items-center text-neutral-400`}>
             <div className={`font-medium ${post.category.title === 'Cities' ? 'text-emerald-500': 'text-indigo-600' }`}>{post.category.title}</div>
             <div className='w-2 h-2 rounded-full bg-neutral-200'></div>
             <div>{`${post.author.first_name} ${post.author.last_name}`}</div>
@@ -20,7 +20,6 @@ const PostContent = ({post, isPostPage=false}: PosrContentProps) => {
             <div>{getReadingTime(post.body)}</div>
             <div className='w-2 h-2 rounded-full bg-neutral-200'></div>
             <div>{getRelativeDate(post.date_created)}</div>
-            <div className='w-2 h-2 rounded-full bg-neutral-200'></div>
         </div>
         {/* Title */}
         <h2 className={`${isPostPage ? "text-2xl md:text-3xl lg:text-4xl font-bold": 'text-xl @md:text-2xl @lg:text-3xl font-medium'}  `}>{post.title}</h2>

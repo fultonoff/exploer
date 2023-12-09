@@ -20,8 +20,14 @@ const Page = ({
 }) => {
 
   const posts = DUMMY_POSTS.filter((post)=> post.category.title.toLowerCase() === params.category)
+  const category = DUMMY_POSTS.find((posts)=> posts.category.title.toLocaleLowerCase() === params.category)
 
   return <PaddingContainer>
+    <div className="mb-10">
+    <h1 className="text-4xl font-semibold">{category?.title}</h1>
+    <p className="text-lg text-neutral-600">{category?.description}</p>
+
+    </div>
     <PostList posts={posts}/>
   </PaddingContainer>;
 };
